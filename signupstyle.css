@@ -117,7 +117,7 @@
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: url("../assets/images/backgroundmain.png") no-repeat center center/cover;
+    background: url("../assets/video/MainPage.mp4") no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
