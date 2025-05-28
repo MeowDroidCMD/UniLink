@@ -1,0 +1,12 @@
+{
+    "username": "janedoe",
+    "email": "jane@example.com",
+    "university": "Harvard University",
+    "bio": "Aspiring data scientist.",
+    "interests": ["AI", "Gaming", "Research"],
+    "connections": ["johnsmith", "mariawong"],
+    "messages": {
+    "johnsmith": [{ "from": "jane", "text": "Hey!" }]
+    }
+  }
+  
