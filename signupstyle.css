@@ -113,18 +113,36 @@
     transform: .3s ease;
   }
   
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background: url("../assets/video/MainPage.mp4") no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  
+/* Background video styling */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Push it behind the form */
+}
+
+/* Ensure the form is centered above the video */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000; /* fallback color if video fails */
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
   .submit:hover {
     background-color: rgb(56, 90, 194);
   }
